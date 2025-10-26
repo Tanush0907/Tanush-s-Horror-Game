@@ -123,10 +123,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7044079427435209521}
-  - component: {fileID: 8030980322751902057}
   - component: {fileID: 6533774982296134133}
   - component: {fileID: 8046419150365189936}
-  - component: {fileID: 8036154144448818328}
   m_Layer: 9
   m_Name: FlashLightRoot
   m_TagString: Untagged
@@ -150,18 +148,6 @@ Transform:
   - {fileID: 4202878393499561148}
   m_Father: {fileID: 7760964880739131285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8030980322751902057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2627939001333331548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 170a0e391b4a09149918b96b1d981ba9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Pickable
 --- !u!54 &6533774982296134133
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -212,20 +198,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0.64, y: 0, z: 2}
---- !u!114 &8036154144448818328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2627939001333331548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d6246ada119b64a905bc92466c1345, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FlashLight
-  flash: {fileID: 5599981826312941698}
-  flashIntensity: 5
 --- !u!1 &3966504060925382287
 GameObject:
   m_ObjectHideFlags: 0

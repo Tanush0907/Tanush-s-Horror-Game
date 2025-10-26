@@ -178,9 +178,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9015410296444179363}
-  - component: {fileID: 3171893986890675118}
   - component: {fileID: 581527942450712740}
-  - component: {fileID: 473773208619065126}
+  - component: {fileID: 3364219087508041990}
+  - component: {fileID: 5818097035610062404}
+  - component: {fileID: 6118782434756597546}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -205,32 +206,6 @@ Transform:
   - {fileID: 6943931001223942620}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3171893986890675118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4702327265228517212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30c7da5d6b913af4e94825d1a50b8283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  inputHandler: {fileID: 473773208619065126}
-  playerCharacterController: {fileID: 581527942450712740}
-  moveSpeed: 3
-  mouseSensitivity: 100
-  playerCamera: {fileID: 2323893463649889366}
-  rayDistance: 10
-  groundCheck: {fileID: 6943931001223942620}
-  groundDistance: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gravity: -9.81
-  playerPickedUpObjectSlot: {fileID: 7444222710687429145}
-  dialogueBox: {fileID: 0}
 --- !u!143 &581527942450712740
 CharacterController:
   m_ObjectHideFlags: 0
@@ -256,7 +231,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &473773208619065126
+--- !u!114 &3364219087508041990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,11 +240,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 4702327265228517212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aa054271c47ef943a9a9cf70d78ef8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 037d84c8a2c79e44a892e0227080ba02, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInputHandler
-  playerPickedUpObjectSlot: {fileID: 7444222710687429145}
-  player: {fileID: 3171893986890675118}
+  m_EditorClassIdentifier: Assembly-CSharp::Inputhandler
+--- !u!114 &5818097035610062404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702327265228517212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb0875aa065416449855c4c5763852c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  moveSpeed: 3
+  gravity: -9.81
+  cameraTransform: {fileID: 2323893463649889366}
+  mouseSensitivity: 10
+  groundCheck: {fileID: 6943931001223942620}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &6118782434756597546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702327265228517212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb8b296917238044af7f7794f941e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionManager
+  playerCamera: {fileID: 2323893463649889366}
+  interactDistance: 3
+  pickUpSlot: {fileID: 7444222710687429145}
 --- !u!1 &5421711773776792928
 GameObject:
   m_ObjectHideFlags: 0

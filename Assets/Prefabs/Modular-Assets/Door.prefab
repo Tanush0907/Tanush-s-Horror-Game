@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4899562285370203828}
   - component: {fileID: 3505776571780132699}
-  - component: {fileID: 6902296367807034930}
   - component: {fileID: 4434265070356420337}
+  - component: {fileID: 5732492812638142138}
   m_Layer: 0
   m_Name: DoorRoot
   m_TagString: Untagged
@@ -56,19 +56,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9, y: 2, z: 0.1}
   m_Center: {x: -0.45, y: 1, z: 0}
---- !u!114 &6902296367807034930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3057595809578016121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd634c33054933845a29ddf2cbecbb29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Door
-  doorAnimator: {fileID: 4434265070356420337}
 --- !u!95 &4434265070356420337
 Animator:
   serializedVersion: 7
@@ -91,6 +78,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5732492812638142138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3057595809578016121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ed76f1242c5b243907cb421e067bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Door
+  doorAnimator: {fileID: 4434265070356420337}
+  boolName: IsDoorOpen
 --- !u!1 &4477115351338289573
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,10 +176,22 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c12f61de63c2fb548a7c69fdc46435af, type: 2}
+    - target: {fileID: -305091885687274788, guid: 478b4bde92daa1041b260b9f238a8033, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c12f61de63c2fb548a7c69fdc46435af, type: 2}
     - target: {fileID: 919132149155446097, guid: 478b4bde92daa1041b260b9f238a8033, type: 3}
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 8032750206264916975, guid: 478b4bde92daa1041b260b9f238a8033, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 51dc51c246f3fd94594d0dfff01b5187, type: 2}
+    - target: {fileID: 8711302838621811232, guid: 478b4bde92daa1041b260b9f238a8033, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 51dc51c246f3fd94594d0dfff01b5187, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

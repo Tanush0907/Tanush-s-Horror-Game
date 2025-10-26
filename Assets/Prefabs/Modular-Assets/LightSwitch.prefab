@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5893866820951880554}
-  - component: {fileID: 3238120151734448137}
   - component: {fileID: 7574715313674585083}
   - component: {fileID: 1922534836076600842}
+  - component: {fileID: 710878521946684413}
   m_Layer: 8
   m_Name: LightSwitch
   m_TagString: Untagged
@@ -36,22 +36,6 @@ Transform:
   - {fileID: 6882738766968469254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3238120151734448137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6773765749758531836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc5361f00d5728648b89e57d19a4499a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LightSwitch
-  lightSetEmpty: {fileID: 0}
-  switchOn: {fileID: 6111304282559442364}
-  switchOff: {fileID: 6969071330683575686}
-  lightSwitchFlick: {fileID: 1922534836076600842}
 --- !u!65 &7574715313674585083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -170,6 +154,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &710878521946684413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6773765749758531836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b97518659b749944a22f1abb4db9e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightSwitch
+  lightSet: {fileID: 0}
+  switchOn: {fileID: 6111304282559442364}
+  switchOff: {fileID: 6969071330683575686}
+  lightSwitchFlick: {fileID: 1922534836076600842}
 --- !u!1001 &6345254168857039085
 PrefabInstance:
   m_ObjectHideFlags: 0
